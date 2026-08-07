@@ -6,6 +6,13 @@ import os
 AI_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_BASE_DIR = os.path.join(AI_DIR, "inputs")
 
+# Repository root, one level above the ai package
+PROJECT_ROOT = os.path.dirname(AI_DIR)
+
+# Loose sample images kept at the repository root, used for quick visual tests
+# before running an algorithm across the full dataset
+SAMPLE_IMAGES_DIR = os.path.join(PROJECT_ROOT, "images")
+
 # Dataset directory with YAML config and train/test/valid splits
 DATASET_DIR = os.path.join(INPUT_BASE_DIR, "dataset")
 DATASET_CONFIG = os.path.join(DATASET_DIR, "data.yaml")
@@ -48,6 +55,9 @@ OUTPUT_IMAGE_FOLDER_MIN_EIG_PATH = os.path.join(OUTPUT_BASE_DIR, "MIN_EIGENVALUE
 OUTPUT_IMAGE_FOLDER_FAST_DETECTION_PATH = os.path.join(OUTPUT_BASE_DIR, "fast_object_detection")
 OUTPUT_IMAGE_FOLDER_GAUSSIAN_FILTER_PATH = os.path.join(OUTPUT_BASE_DIR, "gaussian_filter")
 OUTPUT_IMAGE_FOLDER_HAMMING_FILTER_PATH = os.path.join(OUTPUT_BASE_DIR, "hamming_filter")
+
+# Building isolation (background removal) output
+OUTPUT_IMAGE_FOLDER_ISOLATION_PATH = os.path.join(OUTPUT_BASE_DIR, "isolation")
 
 # Depth estimation output
 OUTPUT_IMAGE_FOLDER_DEPTH_PRO_PATH = os.path.join(OUTPUT_BASE_DIR, "depth_pro")

@@ -2,7 +2,7 @@
 Main execution script for running all image processing and object detection algorithms.
 
 This script orchestrates the execution of all processing pipelines:
-1. Image preprocessing (adaptive, grayscale, Otsu thresholding, etc.)
+1. Image preprocessing (building isolation, adaptive, grayscale, Otsu thresholding, etc.)
 2. Feature extraction (SIFT, SURF, ORB, etc.)
 3. Object detection (RT-DETR, Fast R-CNN)
 
@@ -18,6 +18,7 @@ print("=" * 80)
 
 # Image processing algorithms
 processing_scripts = [
+    ("Building Isolation", "python ai/convert_images_to_isolation.py"),
     ("Adaptive Thresholding", "python ai/convert_images_to_adaptive.py"),
     ("Grayscale Conversion", "python ai/convert_images_to_grayscale.py"),
     ("Otsu Thresholding", "python ai/convert_images_to_otsu.py"),

@@ -1,0 +1,35 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated results - reproducible by rerunning ai/main.py
+ai/outputs/
+
+# 3D reconstruction artefacts
+*.ply
+*.glb
+*.obj
+
+# Model weights, downloaded or trained rather than versioned
+*.pt
+*.pth
+*.onnx
+ai/models/**/checkpoints/
+
+# OccFacade datasets and training logs, downloaded separately per its README
+OccFacade/data/*
+!OccFacade/data/readme.md
+OccFacade/logs/*
+!OccFacade/logs/readme.md
+
+# Local secrets
+.env
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
