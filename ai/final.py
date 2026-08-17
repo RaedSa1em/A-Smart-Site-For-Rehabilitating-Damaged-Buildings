@@ -134,7 +134,7 @@ def post_process_blend_highres(original_path, generated_512_path, mask_512_path)
     print("تم إعادة ترميم المبنى والسطح بنجاح!")
 
 # --- المسار الخاص بالصورة ---
-image_path = r"C:\Users\RAED\Desktop\A-Smart-Site-For-Rehabilitating-Damaged-Buildings\ai\inputs\photo_2026-08-09_12-04-01.jpg"
+image_path = r"C:\Users\RAED\Desktop\A-Smart-Site-For-Rehabilitating-Damaged-Buildings\ai\inputs\middle-size-building-damaged-free-png.png"
 
 # --- تشغيل المسار ---
 mask_file = create_damage_mask(image_path)
