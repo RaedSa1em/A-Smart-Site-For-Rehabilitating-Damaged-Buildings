@@ -16,7 +16,7 @@ if not API_KEY:
     exit()
 
 # ضع اسم صورتك هنا
-IMAGE_PATH = "C:\\Users\\RAED\\Desktop\\1\\inputs\\middle-size-building-damaged-free-png.png"
+IMAGE_PATH = r"C:\Users\RAED\Desktop\image_generation\middle-size-building-damaged-free-png.png"
 
 # ==========================================
 # 2. تحديد اسم ملف النتيجة تلقائياً بحسب اسم الصورة
