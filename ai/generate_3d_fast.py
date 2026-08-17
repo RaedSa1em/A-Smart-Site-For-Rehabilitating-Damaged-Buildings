@@ -6,14 +6,7 @@ import trimesh
 # ==========================================
 # 1. الإعدادات واختيار الصورة
 # ==========================================
-# يُقرأ المفتاح من متغيّر البيئة، حتى لا يبقى مكتوباً داخل الشيفرة
-API_KEY = os.environ.get("TRIPO_API_KEY")
-
-if not API_KEY:
-    print("[ERROR] Environment variable TRIPO_API_KEY is not set.")
-    print('        PowerShell: $env:TRIPO_API_KEY = "tsk_..."')
-    print('        Bash:       export TRIPO_API_KEY="tsk_..."')
-    exit()
+API_KEY = "tsk_kyiloc4uPxzmcQsfJJBw0ooai_hFS6RanJ2yY0jmOzS"
 
 # ضع اسم صورتك هنا
 IMAGE_PATH = r"C:\Users\RAED\Desktop\image_generation\middle-size-building-damaged-free-png.png"
